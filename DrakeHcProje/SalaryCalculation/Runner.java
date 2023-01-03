@@ -1,0 +1,21 @@
+package DrakeHcProje.SalaryCalculation;
+
+public class Runner {
+    public static void main(String[] args) {
+
+        Employee employee=new Employee("Drake",20000,41,2020);
+        System.out.println("Name : "+employee.name);
+        System.out.println("Maaş : "+employee.salary);
+        System.out.println("Ödenecek vergi : "+employee.tax() +"₺");
+        System.out.println("Ödenecek Bonus : "+employee.bonus()+"₺");
+        System.out.println("Maaş Artışı :"+employee.raiseSalary()+"₺");
+
+        System.out.println("Toplam Ödenecek Ücret : "+((employee.salary)+(employee.raiseSalary())));
+
+        System.out.println(employee.toString());
+
+
+
+
+    }
+}
